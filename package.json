@@ -1,0 +1,14 @@
+{
+    "private": true,
+    "workspaces": [
+        "client"
+    ],
+    "scripts": {
+        "serve": "npm run serve --prefix client & cargo run",
+        "build": "npm run build --prefix client & cargo build",
+        "lint": "npm run lint --prefix client & cargo fmt --check ",
+        "format": "npm run format --prefix client & cargo fmt",
+        "storybook": "npm run storybook --prefix client",
+        "build-storybook": "npm run build-storybook --prefix client"
+    }
+}
